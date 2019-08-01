@@ -1,9 +1,13 @@
 buildscript {
 	repositories {
+		maven {
+			url "https://plugins.gradle.org/m2/"
+		}
 		mavenCentral()
 	}
 	dependencies {
 		classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.5.20.RELEASE'
+		classpath('com.google.cloud.tools.jib:com.google.cloud.tools.jib.gradle.plugin:0.9.11')
 	}
 }
 
